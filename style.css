@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10%;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 9999;
+}
+
+.logo{
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+    margin-right: auto;
+}
+
+.nav-links{
+    list-style-type: none;
+    
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+    width: 100px;
+}
+
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: #0088a9;
+}
+
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0,136,169,0.7);
+}
+
+body{
+    background-color: rgba(128, 128, 128, 0.459);
+}
+
+nav .animation {
+    position: absolute;
+    height: 5px;
+    bottom:0;
+    z-index: -1;
+    background-color: rgba(0,136,169,1);
+    width: 80px;
+    border-radius: 8px;
+    margin-left: 15px;
+}
+
+nav .animation-top{
+    position: absolute;
+    height: 5px;
+    top:0;
+    z-index: -1;
+    background-color: rgba(0,136,169,1);
+    width: 80px;
+    border-radius: 8px;
+    margin-left: 15px;
+}
+
+nav .animation-left{
+    position: absolute;
+    transform: rotate(90deg);
+    height: 5px;
+    bottom: 45%;
+    z-index: -1;
+    background-color: rgba(0,136,169,1);
+    width: 55px;
+    border-radius: 8px;
+}
+
+nav .animation-right{
+    position: absolute;
+    transform: rotate(90deg);
+    height: 5px;
+    bottom: 45%;
+    z-index: -1;
+    background-color: rgba(0,136,169,1);
+    width: 55px;
+    border-radius: 8px;
+}
+
+.animation-left {
+    display: none;
+    animation-name: appear4;
+    animation-duration: 0.8s;
+}
+
+.animation-right{
+    display: none;
+    animation-name:appear2;
+    animation-duration: 0.4s;
+}
+
+.animation{
+    display: none;
+    animation-name: appear;
+    animation-duration: 0.2s;
+}
+.animation-top{
+    display: none;
+    animation-name: appear3;
+    animation-duration: 0.6s;
+}
+
+@keyframes appear{
+    0%{
+        width:0px;
+    }
+    100%{
+        width: 80px;
+    }
+}
+@keyframes appear2{
+    0%{
+        width:0px;
+    }
+    50%{
+        width: 0px;
+    }
+    100%{
+        width: 55px;
+    }
+}
+
+@keyframes appear3{
+    0%{
+        width:0px;
+    }
+    75%{
+        width: 0px;
+    }
+    100%{
+        width: 80px;
+    }
+}
+@keyframes appear4{
+    0%{
+        width:0px;
+    }
+    80%{
+        width: 0px;
+    }
+    100%{
+        width: 55px;
+    }
+}
+
+.first:hover .animation{
+    display: block;
+    left: 695px;
+}
+
+.second:hover .animation{
+    display: block;
+    left: 798px;
+   
+}
+.third:hover .animation {
+    display: block;
+    left: 895px;
+}
+.first:hover .animation-top{
+    display: block;
+    left: 695px;
+}
+
+.second:hover .animation-top{
+    display: block;
+    left: 798px;
+   
+}
+.third:hover .animation-top {
+    display: block;
+    left: 895px;
+}
+
+.first:hover .animation-left{
+    display: block;
+    left: 685px;
+}
+
+.second:hover .animation-left{
+    display: block;
+    left: 788px;
+   
+}
+.third:hover .animation-left {
+    display: block;
+    left: 885px;
+}
+.first:hover .animation-right{
+    display: block;
+    left: 760px;
+}
+
+.second:hover .animation-right{
+    display: block;
+    left: 865px;
+   
+}
+.third:hover .animation-right {
+    display: block;
+    left: 960px;
+}
+
+.image1{
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 2000px;
+    z-index: -10;
+    
+}
+
+div .about-us{
+    display: block;
+    position: relative;
+    top: 70px;
+    height: 500px;
+    width: 100%;
+    margin: auto;
+    
+    
+
+}
+
+.button-main{
+    display: flex;
+    justify-content: center;
+    position: inherit;
+    top: 200px;
+    height: 100px;
+    width: 30%;
+    margin: auto;
+
+}
+.main-btn{
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    font-size: 30px;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+}
+.paragraph{
+    position: relative;
+    top: 250px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100px;
+    background-color: rgba(0,136,169,0.8);
+    z-index: 0;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.text{
+    text-align: center;
+    font-size: 30px;
+    z-index: -1;
+}
+
+.p1{
+    margin-top: 10px;
+    height: 1000px;
+    margin-bottom: 10px;
+}
+
+.users{
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;   
+    justify-content: space-evenly; 
+    flex-flow: column;
+
+}
+.user-img{
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+}
+.u1{
+    box-sizing: border-box;
+    display: flex;
+    width: 98%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    border-radius: 10px;
+}
+.user-name{
+    box-sizing: border-box;
+    position: absolute;
+    height: 50px;
+    width: 70%;
+    margin-top: 10px;
+    left: 230px;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 800;
+    color: white;
+
+
+}
+.about-users{
+    box-sizing: border-box;
+    position: relative;
+    width:750px;
+    height: 200px;
+    margin-top: 80px;
+    align-self: flex-start;
+    left: 0px;
+    font-family: monospace;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.list{
+    position: relative;
+    margin-left: 10%;
+    margin-top: 21%;
+    margin-right: 10%;
+    background-color: rgba(0,136,169,0.5);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    height: auto;
+}
+
+.inner-list{
+    position: inherit;
+    height: auto;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.377);
+    border-radius: 10px;
+    
+    
+}
+
+.items{
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+
+    
+}
+.items:hover{
+    background-color: blue;
+    animation-name: list-items;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes list-items{
+    100%{
+        transform:scale(1.05);
+        background-color: purple;
+    }
+}
+.services{
+    padding: 5px;
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+}
